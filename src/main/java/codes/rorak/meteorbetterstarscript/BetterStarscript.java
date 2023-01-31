@@ -49,7 +49,7 @@ public final class BetterStarscript extends MeteorAddon {
         assert $result!=null;
         if (!$result) _ss.error("Value " + $newValue + " is not compatible with type " + Objects.requireNonNull(Variables.get().getVar($name)).getType());
 
-        return Value.null_();
+        return Value.string("");
     }
 
     private Value varGet(Starscript _ss, int _argCount) {
